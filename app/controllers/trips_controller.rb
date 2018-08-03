@@ -31,8 +31,10 @@ class TripsController < ApplicationController
 
   def show
     @chatroom = Chatroom.find_by slug: @trip.id
-    @messages = @chatroom.messages.page(params[:page]).per Setting.paginate.trip_per
-    @message = Message.new
+    if @chatroom
+      @messages = @chatroom.messages.last 5
+      @message = Message.new
+    end
     @user = User.find_by id: @trip.user_id
 
     return if @user

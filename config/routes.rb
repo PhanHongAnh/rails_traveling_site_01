@@ -23,6 +23,5 @@ Rails.application.routes.draw do
     resources :reviews
     get "hastags/:title", to: "hastags#show", as: :hastag
     mount ActionCable.server => "/cable"
-    mount Ckeditor::Engine => "/ckeditor"
   end
 end

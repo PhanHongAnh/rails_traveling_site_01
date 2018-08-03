@@ -118,7 +118,15 @@ p a:hover::after {
   opacity: 0.2;
 }
 
-::selection {}
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000000;
+}
 
 p::selection {}
 
