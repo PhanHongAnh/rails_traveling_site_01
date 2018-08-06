@@ -10,6 +10,9 @@ trip:
     maximum: 50
 paginate:
   per: 9
+  per_user: 8
   mess_per: 10
 hastags:
   top: 10
+time:
+  expired_time: 2

@@ -4,6 +4,7 @@ User.create!(name:  "Example User",
              password_confirmation: "foobar",
              is_admin: true,
              is_actived: true,
+             activated_at: Time.zone.now,,
              is_deleted: false)
 
 99.times do |n|
@@ -15,6 +16,7 @@ User.create!(name:  "Example User",
                password: password,
                password_confirmation: password,
                is_actived: true,
+               activated_at: Time.zone.now,
                is_deleted: false)
 end
 
