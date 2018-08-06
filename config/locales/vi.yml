@@ -2,7 +2,6 @@ vi:
   error_parrent_comment_not_found: "Không thấy cha"
   error_comment_not_found: "Không thấy bình luận"
   error_delete_comment: "Không xóa được"
-  are_you_sure?: "Bạn chắc chứ?"
   Reply: "Trả lời"
   edit: "Sửa"
   add_a_comment: "Thêm một bình luận"

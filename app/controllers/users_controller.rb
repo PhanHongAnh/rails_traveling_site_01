@@ -24,7 +24,7 @@ class UsersController < ApplicationController
       flash[:notice] = t "check_active"
       redirect_to root_url
     else
-      flash[:danger] = t "create_fail"
+      flash[:danger] = t "fail_create"
       render :new
     end
   end

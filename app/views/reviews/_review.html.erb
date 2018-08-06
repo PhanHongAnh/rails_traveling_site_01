@@ -30,7 +30,7 @@
         </li>
         <li class="blog_post_meta_item">
           <% if logged_in? %>
-            <% if review.user.is_user?(current_user) || current_user.admin? %>
+            <% if review.user.is_user?(current_user) || current_user.is_admin? %>
               <%= link_to t("delete"), review, method: :delete,
                 data: {confirm: t("confirm_delete")} %>
             <% end %>
@@ -48,5 +48,5 @@
   </div>
 </div>
 <br>
-_________________________________________________________________________________
+<br>
 <br>

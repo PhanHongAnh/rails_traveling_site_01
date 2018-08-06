@@ -27,7 +27,7 @@ class PasswordResetsController < ApplicationController
       log_in @user
       @user.update_attributes reset_digest: nil
       flash[:success] = t "success.password_reset"
-      redirect_to @user
+      redirect_to root_url
     else
       render :edit
     end
